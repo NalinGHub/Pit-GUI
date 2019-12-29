@@ -4,6 +4,7 @@ express = require('express'), //refers to Express the middleware helper for Node
 router = express.Router(); //refers to the Router() function in Express the middleware helper for Node.js
 
 router.route('/coord')
-.get(graph.coord);
+    .get(graph.coord)
+    .post(graph.createCoord)
 
 module.exports = router;
